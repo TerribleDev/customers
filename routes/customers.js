@@ -13,6 +13,8 @@ const { slim, full } = Array.from({ length: 20 }).fill(0).reduce((accum, current
     ...fakeData,     
     buzzWords: Array.from({ length: 100 }).fill(0).map(faker.company.bsBuzz).join(";"),
     catchPhrases: Array.from({ length: 100 }).fill(0).map(faker.company.catchPhrase).join(";"),
+    companyName: faker.company.companyName(),
+    phone: faker.phone.phoneNumber()
 }
   return accum
 }, { slim: {}, full: {} })
