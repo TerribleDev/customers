@@ -1,0 +1,12 @@
+{
+  "name": "customers",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"No tests yet...\""
+  },
+  "author": "",
+  "dependencies": {
+    "faker": "^5.5.3"
+  }
+}
