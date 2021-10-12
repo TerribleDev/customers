@@ -1,4 +1,4 @@
-const { full } = require('../fakerData')
+const { full } = require('../SharedCode/fakerData.js')
 module.exports = async function (context, req) {
     const id = context.bindingData.id;
     if(!id) {
@@ -10,6 +10,7 @@ module.exports = async function (context, req) {
     }
     context.res = {
         // status: 200, /* Defaults to 200 */
-        body: JSON.stringify(full[id])
+        body: JSON.stringify(full[id]),
+        type: 'application/json'
     };
 }
