@@ -1,4 +1,4 @@
 const { slim } = require('../SharedCode/fakerData.js')
 module.exports = function (context, req) {
-    context.res.send(slim)
+    context.res.send(Object.values(slim))
 }
