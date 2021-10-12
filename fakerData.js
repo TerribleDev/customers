@@ -17,4 +17,4 @@ const { slim, full } = Array.from({ length: 20 }).fill(0).reduce((accum, current
   return accum
 }, { slim: {}, full: {} })
 
-module.exports = { slim, full}
+module.exports = { slim, full }
