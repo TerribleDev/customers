@@ -8,9 +8,5 @@ module.exports = async function (context, req) {
         }
         return;
     }
-    context.res = {
-        // status: 200, /* Defaults to 200 */
-        body: JSON.stringify(full[id]),
-        type: 'application/json'
-    };
+    context.res.send(full[id])
 }
