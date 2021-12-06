@@ -20,6 +20,7 @@ const { slim, full } = Array.from({ length: 20 }).fill(0).reduce((accum, current
 }, { slim: {}, full: {} })
 
 router.get('/', function(req, res, next) {
+  console.log(JSON.stringify(Object.values(slim)))
   return res.send(Object.values(slim))
 });
 router.get('/:id', function(req, res, next) {
@@ -28,6 +29,7 @@ router.get('/:id', function(req, res, next) {
   }
   const record = full[req.params.id];
   if(record) {
+    console.log(JSON.stringify(record))
     return res.send(record)
   }
   return res.sendStatus(404)
